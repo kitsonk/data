@@ -1,0 +1,53 @@
+{
+  "name": "dojo-data",
+  "version": "2.0.0-pre",
+  "description": "A package for transforming data",
+  "homepage": "http://dojotoolkit.org",
+  "bugs": {
+    "url": "https://github.com/dojo/data/issues"
+  },
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "dist",
+    "src",
+    "typings.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dojo/data.git"
+  },
+  "scripts": {
+    "prepublish": "grunt peerDepInstall dist",
+    "test": "grunt test"
+  },
+  "typings": "./dist/umd/dojo-data.d.ts",
+  "peerDependencies": {
+    "@reactivex/rxjs": "5.0.0-beta.6",
+    "dojo-compose": "next",
+    "dojo-core": "next",
+    "dojo-has": "next",
+    "dojo-shim": "next"
+  },
+  "devDependencies": {
+    "codecov.io": "0.1.6",
+    "dojo-loader": ">=2.0.0-beta",
+    "dts-generator": "~1.7.0",
+    "glob": "^7.0.5",
+    "grunt": "~1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-dojo2": ">=2.0.0-beta.13",
+    "grunt-text-replace": "^0.4.0",
+    "grunt-ts": "^5.5.1",
+    "grunt-tslint": "^3.1.1",
+    "grunt-typings": ">=0.1.5",
+    "intern": "^3.3.1",
+    "istanbul": "^0.4.4",
+    "remap-istanbul": "^0.6.4",
+    "tslint": "next",
+    "typescript": "2.1.0-dev.20160819"
+  }
+}
